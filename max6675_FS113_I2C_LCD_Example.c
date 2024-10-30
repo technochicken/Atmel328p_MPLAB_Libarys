@@ -3,8 +3,8 @@
 #include "i2c_lcd_1602.h"
 #include "max6675.h"
 
-int main(void) {
-    // I²C und LCD initialisieren
+int lcd_max6675_eample_main(void) {
+    // IÂ²C und LCD initialisieren
     i2c_lcd_1602_init();
     i2c_lcd_1602_init_lcd();
 
@@ -25,7 +25,7 @@ int main(void) {
             i2c_lcd_1602_set_cursor(1, 0);
             i2c_lcd_1602_write_float_custom(temperature, 2);  // Temperatur mit 2 Dezimalstellen anzeigen
             i2c_lcd_1602_write_char(223);  // Gradzeichen
-            i2c_lcd_1602_write_char('C');  // "C" für Celsius
+            i2c_lcd_1602_write_char('C');  // "C" fÃ¼r Celsius
         }
 
         _delay_ms(1000);
