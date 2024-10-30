@@ -9,12 +9,12 @@ This project demonstrates how to interface an **ATmega328P** microcontroller wit
 - **Header Files (`.h`):**
   - `i2c_lcd_1602.h`: Functions for controlling the I2C 1602 LCD.
   - `max6675.h`: Functions for reading temperature data from the MAX6675 sensor.
-  - `dog_spi_display.h`: Functions for controlling the DOG SPI Display.
+  - `EA-DOGS164W-A.h`: Functions for controlling the DOG SPI Display.
 
 - **Source Files (`.c`):**
   - `i2c_lcd_1602.c`: Implementation of I2C LCD functions.
   - `max6675.c`: Implementation of MAX6675 communication and data reading.
-  - `dog_spi_display.c`: Implementation of DOG SPI Display functions.
+  - `EA-DOGS164W-A.c`: Implementation of DOG SPI Display functions.
 
 Include all these files in the corresponding **header** and **source** sections of your MPLAB X project.
 
@@ -51,7 +51,7 @@ This library handles communication with the I2C 1602 LCD. It includes functions 
 
 This library communicates with the MAX6675 thermocouple sensor to read the temperature data over SPI.
 
-### 3. `dog_spi_display.h`
+### 3. `EA-DOGS164W-A.h`
 
 This library handles the DOG SPI display, providing functions for sending commands and data over SPI, as well as controlling the display settings.
 
